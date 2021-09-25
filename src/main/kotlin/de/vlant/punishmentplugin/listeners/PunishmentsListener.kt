@@ -32,7 +32,7 @@ class PunishmentsListener(_plugin: PunishmentPlugin) : Listener {
     fun onPlayerChat(playerChatEvent: AsyncPlayerChatEvent) {
         if (plugin.players[playerChatEvent.player.uniqueId]?.contains(PunishmentPlugin.Punishment.CANT_TALK) == true) {
             playerChatEvent.isCancelled = true
-            playerChatEvent.player.sendMessage("${ChatColor.DARK_RED}You can't talk right now.")
+            playerChatEvent.player.sendMessage("${ChatColor.DARK_RED}You can't talk right now.")//
         }
     }
 
